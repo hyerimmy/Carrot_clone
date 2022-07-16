@@ -13,6 +13,14 @@
 		AB8825FD28808CFB00232162 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB8825FB28808CFB00232162 /* Main.storyboard */; };
 		AB8825FF28808CFD00232162 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB8825FE28808CFD00232162 /* Assets.xcassets */; };
 		AB88260228808CFD00232162 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB88260028808CFD00232162 /* LaunchScreen.storyboard */; };
+		ABEE233F2883282100380543 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABEE233E2883282100380543 /* HomeViewController.swift */; };
+		ABEE2341288328D500380543 /* HomeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABEE2340288328D500380543 /* HomeData.swift */; };
+		ABEE234928832B5C00380543 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABEE234728832B5C00380543 /* HomeTableViewCell.swift */; };
+		ABEE234A28832B5C00380543 /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABEE234828832B5C00380543 /* HomeTableViewCell.xib */; };
+		ABEE234D2883412200380543 /* ChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABEE234B2883412200380543 /* ChatTableViewCell.swift */; };
+		ABEE234E2883412200380543 /* ChatTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABEE234C2883412200380543 /* ChatTableViewCell.xib */; };
+		ABEE23502883433B00380543 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABEE234F2883433B00380543 /* ChatViewController.swift */; };
+		ABEE23522883434D00380543 /* ChatData.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABEE23512883434D00380543 /* ChatData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +32,14 @@
 		AB8825FE28808CFD00232162 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB88260128808CFD00232162 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AB88260328808CFD00232162 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ABEE233E2883282100380543 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		ABEE2340288328D500380543 /* HomeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeData.swift; sourceTree = "<group>"; };
+		ABEE234728832B5C00380543 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeTableViewCell.swift; path = TableViewCell/HomeTableViewCell.swift; sourceTree = "<group>"; };
+		ABEE234828832B5C00380543 /* HomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = HomeTableViewCell.xib; path = TableViewCell/HomeTableViewCell.xib; sourceTree = "<group>"; };
+		ABEE234B2883412200380543 /* ChatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTableViewCell.swift; sourceTree = "<group>"; };
+		ABEE234C2883412200380543 /* ChatTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatTableViewCell.xib; sourceTree = "<group>"; };
+		ABEE234F2883433B00380543 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		ABEE23512883434D00380543 /* ChatData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +74,45 @@
 			children = (
 				AB8825F528808CFB00232162 /* AppDelegate.swift */,
 				AB8825F728808CFB00232162 /* SceneDelegate.swift */,
-				AB8825F928808CFB00232162 /* ViewController.swift */,
+				ABEE234528832B1800380543 /* ViewController */,
 				AB8825FB28808CFB00232162 /* Main.storyboard */,
 				AB8825FE28808CFD00232162 /* Assets.xcassets */,
 				AB88260028808CFD00232162 /* LaunchScreen.storyboard */,
 				AB88260328808CFD00232162 /* Info.plist */,
+				ABEE234628832B2F00380543 /* Data */,
+				ABEE234428832B0900380543 /* TableViewCell */,
+				ABEE234728832B5C00380543 /* HomeTableViewCell.swift */,
+				ABEE234828832B5C00380543 /* HomeTableViewCell.xib */,
 			);
 			path = Carrot;
+			sourceTree = "<group>";
+		};
+		ABEE234428832B0900380543 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				ABEE234B2883412200380543 /* ChatTableViewCell.swift */,
+				ABEE234C2883412200380543 /* ChatTableViewCell.xib */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		ABEE234528832B1800380543 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				AB8825F928808CFB00232162 /* ViewController.swift */,
+				ABEE233E2883282100380543 /* HomeViewController.swift */,
+				ABEE234F2883433B00380543 /* ChatViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		ABEE234628832B2F00380543 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				ABEE2340288328D500380543 /* HomeData.swift */,
+				ABEE23512883434D00380543 /* ChatData.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +175,8 @@
 			files = (
 				AB88260228808CFD00232162 /* LaunchScreen.storyboard in Resources */,
 				AB8825FF28808CFD00232162 /* Assets.xcassets in Resources */,
+				ABEE234E2883412200380543 /* ChatTableViewCell.xib in Resources */,
+				ABEE234A28832B5C00380543 /* HomeTableViewCell.xib in Resources */,
 				AB8825FD28808CFB00232162 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,9 +188,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABEE23522883434D00380543 /* ChatData.swift in Sources */,
+				ABEE234928832B5C00380543 /* HomeTableViewCell.swift in Sources */,
 				AB8825FA28808CFB00232162 /* ViewController.swift in Sources */,
+				ABEE23502883433B00380543 /* ChatViewController.swift in Sources */,
 				AB8825F628808CFB00232162 /* AppDelegate.swift in Sources */,
 				AB8825F828808CFB00232162 /* SceneDelegate.swift in Sources */,
+				ABEE234D2883412200380543 /* ChatTableViewCell.swift in Sources */,
+				ABEE233F2883282100380543 /* HomeViewController.swift in Sources */,
+				ABEE2341288328D500380543 /* HomeData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
