@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB7BDA11288447EF00FE71A6 /* CommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7BDA0F288447EF00FE71A6 /* CommentTableViewCell.swift */; };
+		AB7BDA12288447EF00FE71A6 /* CommentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB7BDA10288447EF00FE71A6 /* CommentTableViewCell.xib */; };
+		AB7BDA142884498B00FE71A6 /* CommentData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7BDA132884498B00FE71A6 /* CommentData.swift */; };
+		AB7BDA16288449D300FE71A6 /* CommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7BDA15288449D300FE71A6 /* CommentViewController.swift */; };
 		AB8825F628808CFB00232162 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8825F528808CFB00232162 /* AppDelegate.swift */; };
 		AB8825F828808CFB00232162 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8825F728808CFB00232162 /* SceneDelegate.swift */; };
 		AB8825FA28808CFB00232162 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8825F928808CFB00232162 /* ViewController.swift */; };
@@ -28,6 +32,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AB7BDA0F288447EF00FE71A6 /* CommentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentTableViewCell.swift; sourceTree = "<group>"; };
+		AB7BDA10288447EF00FE71A6 /* CommentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommentTableViewCell.xib; sourceTree = "<group>"; };
+		AB7BDA132884498B00FE71A6 /* CommentData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentData.swift; sourceTree = "<group>"; };
+		AB7BDA15288449D300FE71A6 /* CommentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentViewController.swift; sourceTree = "<group>"; };
 		AB8825F228808CFB00232162 /* Carrot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Carrot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB8825F528808CFB00232162 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AB8825F728808CFB00232162 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -102,6 +110,8 @@
 				AB8F99252883DD2600598428 /* LifeTableViewCell.xib */,
 				ABEE234B2883412200380543 /* ChatTableViewCell.swift */,
 				ABEE234C2883412200380543 /* ChatTableViewCell.xib */,
+				AB7BDA0F288447EF00FE71A6 /* CommentTableViewCell.swift */,
+				AB7BDA10288447EF00FE71A6 /* CommentTableViewCell.xib */,
 			);
 			path = TableViewCell;
 			sourceTree = "<group>";
@@ -113,6 +123,7 @@
 				ABEE233E2883282100380543 /* HomeViewController.swift */,
 				ABEE234F2883433B00380543 /* ChatViewController.swift */,
 				AB8F992A2883E18900598428 /* LifeViewController.swift */,
+				AB7BDA15288449D300FE71A6 /* CommentViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -123,6 +134,7 @@
 				ABEE2340288328D500380543 /* HomeData.swift */,
 				ABEE23512883434D00380543 /* ChatData.swift */,
 				AB8F99282883E06B00598428 /* LifeData.swift */,
+				AB7BDA132884498B00FE71A6 /* CommentData.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -189,6 +201,7 @@
 				AB8F99272883DD2600598428 /* LifeTableViewCell.xib in Resources */,
 				AB8825FF28808CFD00232162 /* Assets.xcassets in Resources */,
 				ABEE234E2883412200380543 /* ChatTableViewCell.xib in Resources */,
+				AB7BDA12288447EF00FE71A6 /* CommentTableViewCell.xib in Resources */,
 				ABEE234A28832B5C00380543 /* HomeTableViewCell.xib in Resources */,
 				AB8825FD28808CFB00232162 /* Main.storyboard in Resources */,
 			);
@@ -206,9 +219,12 @@
 				AB8F992B2883E18900598428 /* LifeViewController.swift in Sources */,
 				AB8825FA28808CFB00232162 /* ViewController.swift in Sources */,
 				ABEE23502883433B00380543 /* ChatViewController.swift in Sources */,
+				AB7BDA16288449D300FE71A6 /* CommentViewController.swift in Sources */,
 				AB8825F628808CFB00232162 /* AppDelegate.swift in Sources */,
 				AB8825F828808CFB00232162 /* SceneDelegate.swift in Sources */,
 				ABEE234D2883412200380543 /* ChatTableViewCell.swift in Sources */,
+				AB7BDA11288447EF00FE71A6 /* CommentTableViewCell.swift in Sources */,
+				AB7BDA142884498B00FE71A6 /* CommentData.swift in Sources */,
 				ABEE233F2883282100380543 /* HomeViewController.swift in Sources */,
 				ABEE2341288328D500380543 /* HomeData.swift in Sources */,
 				AB8F99292883E06B00598428 /* LifeData.swift in Sources */,

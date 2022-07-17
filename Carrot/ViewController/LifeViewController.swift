@@ -26,7 +26,21 @@ class LifeViewController: UIViewController {
         
         let lifeCell = UINib(nibName: "LifeTableViewCell", bundle: nil)
         self.lifeTableView.register(lifeCell, forCellReuseIdentifier: "LifeCell")
+    
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+            if segue.identifier == "mySegue"{
+                if let destination = segue.destination as?
+                    CommentViewController {
+                    if let selectdeIndex =
+                        self.lifeTableView.indexPathForSelectedRow?.row {
+                            
+                        destination.contentLabel.text=LifeList[selectdeIndex].content
+                    }
+                }
+            }
+        }
     
 }
 
@@ -36,9 +50,13 @@ extension LifeViewController : UITableViewDelegate, UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "LifeCell", for: indexPath) as? LifeTableViewCell else{
+            
             return UITableViewCell()
         }
+        
+        cell.selectionStyle = .none
         
         
         let lifeData : LifeData = LifeList[indexPath.row]

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="105" id="KGk-i7-Jjw" customClass="CommentTableViewCell" customModule="Carrot" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="105"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="105"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="햄" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t4C-HN-gE6">
+                        <rect key="frame" x="58" y="15" width="13" height="18"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chat_profile0" translatesAutoresizingMaskIntoConstraints="NO" id="2gM-px-Ns3">
+                        <rect key="frame" x="10" y="10" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="1f2-eq-UaJ"/>
+                            <constraint firstAttribute="width" constant="40" id="36X-zY-8YD"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bDf-DX-4aR">
+                        <rect key="frame" x="58" y="41" width="252" height="20.5"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20.5" id="ShB-Rc-o7r"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="좋아요 답글쓰기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qbp-Tz-Gs4">
+                        <rect key="frame" x="58" y="73" width="76" height="15"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="bDf-DX-4aR" firstAttribute="top" secondItem="t4C-HN-gE6" secondAttribute="bottom" constant="8" symbolic="YES" id="4rw-QZ-YbW"/>
+                    <constraint firstItem="bDf-DX-4aR" firstAttribute="leading" secondItem="2gM-px-Ns3" secondAttribute="trailing" constant="8" symbolic="YES" id="Sll-Jm-8Z6"/>
+                    <constraint firstAttribute="trailing" secondItem="bDf-DX-4aR" secondAttribute="trailing" constant="10" id="Was-5I-TbW"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Qbp-Tz-Gs4" secondAttribute="bottom" constant="15" id="ZZB-LN-zS1"/>
+                    <constraint firstItem="2gM-px-Ns3" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="fUd-09-pcU"/>
+                    <constraint firstItem="2gM-px-Ns3" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="lVS-7A-ch8"/>
+                    <constraint firstItem="Qbp-Tz-Gs4" firstAttribute="leading" secondItem="bDf-DX-4aR" secondAttribute="leading" id="qHp-Ra-d1y"/>
+                    <constraint firstItem="Qbp-Tz-Gs4" firstAttribute="top" secondItem="bDf-DX-4aR" secondAttribute="bottom" constant="5" id="urR-gE-7fN"/>
+                    <constraint firstItem="t4C-HN-gE6" firstAttribute="leading" secondItem="2gM-px-Ns3" secondAttribute="trailing" constant="8" symbolic="YES" id="vHP-mV-fo8"/>
+                    <constraint firstItem="t4C-HN-gE6" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="vo0-FD-vYl"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="uiComment" destination="bDf-DX-4aR" id="s22-bK-B0L"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="110.15625"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="chat_profile0" width="73" height="73"/>
+    </resources>
+</document>
