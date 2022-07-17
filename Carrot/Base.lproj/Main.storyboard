@@ -11,7 +11,8 @@
         <!--동네생활-->
         <scene sceneID="Qk4-F5-BTF">
             <objects>
-                <viewController id="q9c-CC-dH5" sceneMemberID="viewController">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yb8-eP-G5E" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewController id="q9c-CC-dH5" customClass="LifeViewController" customModule="Carrot" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jnR-X9-sV9">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -27,20 +28,30 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="llD-xg-xSm">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="xzk-j1-mn6"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="bqp-pE-ndO" firstAttribute="leading" secondItem="xzk-j1-mn6" secondAttribute="leading" id="7nR-cS-QhI"/>
+                            <constraint firstItem="xzk-j1-mn6" firstAttribute="trailing" secondItem="llD-xg-xSm" secondAttribute="trailing" id="FBF-lC-sRY"/>
                             <constraint firstAttribute="trailing" secondItem="bqp-pE-ndO" secondAttribute="trailing" id="J9L-O0-3oW"/>
                             <constraint firstItem="bqp-pE-ndO" firstAttribute="top" secondItem="xzk-j1-mn6" secondAttribute="top" id="btt-cr-zcn"/>
+                            <constraint firstItem="llD-xg-xSm" firstAttribute="leading" secondItem="xzk-j1-mn6" secondAttribute="leading" id="nY0-mz-2Wk"/>
+                            <constraint firstItem="llD-xg-xSm" firstAttribute="top" secondItem="bqp-pE-ndO" secondAttribute="bottom" id="naS-aC-Lks"/>
+                            <constraint firstItem="xzk-j1-mn6" firstAttribute="bottom" secondItem="llD-xg-xSm" secondAttribute="bottom" id="v49-RY-HjI"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="동네생활" image="tab_2" selectedImage="tab_fill_2" id="Fey-Zj-DKt"/>
+                    <connections>
+                        <outlet property="lifeTableView" destination="llD-xg-xSm" id="Uiv-2N-M7T"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="yb8-eP-G5E" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-986" y="58"/>
+            <point key="canvasLocation" x="-986.95652173913049" y="57.589285714285708"/>
         </scene>
         <!--내 근처-->
         <scene sceneID="32Q-CU-dCC">

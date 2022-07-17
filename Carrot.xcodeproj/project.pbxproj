@@ -13,6 +13,10 @@
 		AB8825FD28808CFB00232162 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB8825FB28808CFB00232162 /* Main.storyboard */; };
 		AB8825FF28808CFD00232162 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB8825FE28808CFD00232162 /* Assets.xcassets */; };
 		AB88260228808CFD00232162 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB88260028808CFD00232162 /* LaunchScreen.storyboard */; };
+		AB8F99262883DD2600598428 /* LifeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8F99242883DD2600598428 /* LifeTableViewCell.swift */; };
+		AB8F99272883DD2600598428 /* LifeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB8F99252883DD2600598428 /* LifeTableViewCell.xib */; };
+		AB8F99292883E06B00598428 /* LifeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8F99282883E06B00598428 /* LifeData.swift */; };
+		AB8F992B2883E18900598428 /* LifeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8F992A2883E18900598428 /* LifeViewController.swift */; };
 		ABEE233F2883282100380543 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABEE233E2883282100380543 /* HomeViewController.swift */; };
 		ABEE2341288328D500380543 /* HomeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABEE2340288328D500380543 /* HomeData.swift */; };
 		ABEE234928832B5C00380543 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABEE234728832B5C00380543 /* HomeTableViewCell.swift */; };
@@ -32,6 +36,10 @@
 		AB8825FE28808CFD00232162 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB88260128808CFD00232162 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AB88260328808CFD00232162 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB8F99242883DD2600598428 /* LifeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeTableViewCell.swift; sourceTree = "<group>"; };
+		AB8F99252883DD2600598428 /* LifeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LifeTableViewCell.xib; sourceTree = "<group>"; };
+		AB8F99282883E06B00598428 /* LifeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeData.swift; sourceTree = "<group>"; };
+		AB8F992A2883E18900598428 /* LifeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeViewController.swift; sourceTree = "<group>"; };
 		ABEE233E2883282100380543 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		ABEE2340288328D500380543 /* HomeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeData.swift; sourceTree = "<group>"; };
 		ABEE234728832B5C00380543 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeTableViewCell.swift; path = TableViewCell/HomeTableViewCell.swift; sourceTree = "<group>"; };
@@ -90,6 +98,8 @@
 		ABEE234428832B0900380543 /* TableViewCell */ = {
 			isa = PBXGroup;
 			children = (
+				AB8F99242883DD2600598428 /* LifeTableViewCell.swift */,
+				AB8F99252883DD2600598428 /* LifeTableViewCell.xib */,
 				ABEE234B2883412200380543 /* ChatTableViewCell.swift */,
 				ABEE234C2883412200380543 /* ChatTableViewCell.xib */,
 			);
@@ -102,6 +112,7 @@
 				AB8825F928808CFB00232162 /* ViewController.swift */,
 				ABEE233E2883282100380543 /* HomeViewController.swift */,
 				ABEE234F2883433B00380543 /* ChatViewController.swift */,
+				AB8F992A2883E18900598428 /* LifeViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -111,6 +122,7 @@
 			children = (
 				ABEE2340288328D500380543 /* HomeData.swift */,
 				ABEE23512883434D00380543 /* ChatData.swift */,
+				AB8F99282883E06B00598428 /* LifeData.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -174,6 +186,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB88260228808CFD00232162 /* LaunchScreen.storyboard in Resources */,
+				AB8F99272883DD2600598428 /* LifeTableViewCell.xib in Resources */,
 				AB8825FF28808CFD00232162 /* Assets.xcassets in Resources */,
 				ABEE234E2883412200380543 /* ChatTableViewCell.xib in Resources */,
 				ABEE234A28832B5C00380543 /* HomeTableViewCell.xib in Resources */,
@@ -190,6 +203,7 @@
 			files = (
 				ABEE23522883434D00380543 /* ChatData.swift in Sources */,
 				ABEE234928832B5C00380543 /* HomeTableViewCell.swift in Sources */,
+				AB8F992B2883E18900598428 /* LifeViewController.swift in Sources */,
 				AB8825FA28808CFB00232162 /* ViewController.swift in Sources */,
 				ABEE23502883433B00380543 /* ChatViewController.swift in Sources */,
 				AB8825F628808CFB00232162 /* AppDelegate.swift in Sources */,
@@ -197,6 +211,8 @@
 				ABEE234D2883412200380543 /* ChatTableViewCell.swift in Sources */,
 				ABEE233F2883282100380543 /* HomeViewController.swift in Sources */,
 				ABEE2341288328D500380543 /* HomeData.swift in Sources */,
+				AB8F99292883E06B00598428 /* LifeData.swift in Sources */,
+				AB8F99262883DD2600598428 /* LifeTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
